@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Now - Amazon </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Amazon </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="shop_now.html">Shop Now</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="deals.html">Deals</a>
+          </li>
+        </ul>
+        <a href="cart.html" class="btn btn-primary position-relative">
+          Cart
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Shop Now Section -->
+  <section class="shop-now-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Shop Now</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="./img/1736440345458.jpeg" class="card-img-top" alt="Product 1">
+            <div class="card-body">
+              <h5 class="card-title">Product 1</h5>
+              <p class="card-text">$19.99</p>
+              <a href="product.html" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat for other products -->
+      </div>
+    </div>
+
+    <section class="shop-now-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="./img/1736440345472.jpeg" class="card-img-top" alt="Product 2">
+              <div class="card-body">
+                <h5 class="card-title">Product 2</h5>
+                <p class="card-text">$1000.99</p>
+                <a href="product.html" class="btn btn-primary">View Details</a>
+              </div>
+            </div>
+          </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>About Us</h5>
+          <p>We are a leading e-commerce platform providing the best products at affordable prices.</p>
+        </div>
+        <div class="col-md-6">
+          <h5>Contact Us</h5>
+          <p>Email: support@amazon.com</p>
+          <p>Phone: +1 234 567 890</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./img/nahhhhhh.jpeg" alt=""></a>
+      <!-- <img class="nabilah" src="./img/1583154.webp" alt=""> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./product.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./deals.html">Deals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./cart.html">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./dashboard.html">Dashboard</a>
+          </li>
+        </ul>
+        <form class="d-flex ms-2">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section bg-light py-5">
+    <div class="container text-center text-md-start">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1 class="display-4 fw-bold">Welcome to Amazon</h1>
+          <p class="lead">Your one-stop shop for everything you need.</p>
+          <a href="./shop_now.html" class="btn btn-primary btn-lg">Shop Now</a>
+        </div>
+        <div class="col-md-6 mt-4 mt-md-0">
+          <img src="./img/Iphones.jpeg" class="img-fluid rounded" alt="Iphone">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Grid -->
+  <section class="product-grid bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Featured Products</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm">
+            <img src="./img/Iphones.jpeg" class="card-img-top" alt="Product 1">
+            <div class="card-body text-center">
+              <h5 class="card-title">Product 1</h5>
+              <p class="card-text text-primary">$19.99</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm">
+            <img src="./img/1736444153558.jpeg" class="card-img-top" alt="Product 2">
+            <div class="card-body text-center">
+              <h5 class="card-title">Product 2</h5>
+              <p class="card-text text-primary">$29.99</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm">
+            <img src="./img/1736444153558.jpeg" class="card-img-top" alt="Product 3">
+            <div class="card-body text-center">
+              <h5 class="card-title">Product 3</h5>
+              <p class="card-text text-primary">$39.99</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>About Us</h5>
+          <p>We are a leading e-commerce platform providing the best products at affordable prices.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <h5>Contact Us</h5>
+          <p>Email: support@amazon.com</p>
+          <p>Phone: +1 234 567 890</p>
+          <div class="social-icons">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Font Awesome for Social Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

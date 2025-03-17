@@ -1,0 +1,189 @@
+/* Custom Styles */
+:root {
+  --primary-color: #ff9900; /* Amazon's primary color */
+  --secondary-color: #232f3e; /* Amazon's secondary color */
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.6;
+  color: var(--dark-color);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* .navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--light-color);
+} */
+ .nabilah{
+  font-size: 10px!important;
+  color: yellow!important;
+  
+
+ }
+
+.nav-link {
+  color: var(--light-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--secondary-color), var(--dark-color));
+  color: var(--light-color);
+  padding: 100px 0;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.hero-section .btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.hero-section .btn-primary:hover {
+  background-color: #e68a00;
+}
+
+/* Product Grid */
+.product-grid {
+  padding: 80px 0;
+}
+
+.product-grid h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.product-grid .card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-grid .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-grid .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-grid .card-body {
+  padding: 20px;
+}
+
+.product-grid .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.product-grid .card-text {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.product-grid .btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 8px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.product-grid .btn-primary:hover {
+  background-color: #e68a00;
+}
+
+/* Footer */
+footer {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  padding: 40px 0;
+}
+
+footer h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+footer p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #e68a00;
+}
+
+/* Social Icons */
+.social-icons a {
+  font-size: 1.25rem;
+  color: var(--light-color);
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--primary-color);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.hero-section,
+.product-grid,
+footer {
+  animation: fadeIn 1s ease-out;
+}

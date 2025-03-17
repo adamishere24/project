@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Market Dashboard</title>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+      <div class="logo_name">E-Market</div>
+      <i class='bx bx-menu' id="btn"></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <i class='bx bx-search'></i>
+        <input type="text" placeholder="Search...">
+        <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="index.html">
+          <i class='bx bx-home'></i>
+          <span class="links_name">Home</span>
+        </a>
+        <span class="tooltip">Home</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-package'></i>
+          <span class="links_name">Products</span>
+        </a>
+        <span class="tooltip">Products</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cart'></i>
+          <span class="links_name">Orders</span>
+        </a>
+        <span class="tooltip">Orders</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-chart'></i>
+          <span class="links_name">Analytics</span>
+        </a>
+        <span class="tooltip">Analytics</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog'></i>
+          <span class="links_name">Settings</span>
+        </a>
+        <span class="tooltip">Settings</span>
+      </li>
+      <li class="profile">
+        <div class="profile-details">
+          <img src="https://via.placeholder.com/45" alt="profileImg">
+          <div class="name_job">
+            <div class="name">Admin</div>
+            <div class="job">E-Market Manager</div>
+          </div>
+        </div>
+        <i class='bx bx-log-out' id="log_out"></i>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <section class="home-section">
+    <div class="text">Dashboard Overview</div>
+    <div class="dashboard-content">
+      <div class="card">
+        <h3>Total Sales</h3>
+        <p>$12,345</p>
+      </div>
+      <div class="card">
+        <h3>Total Orders</h3>
+        <p>1,234</p>
+      </div>
+      <div class="card">
+        <h3>Total Products</h3>
+        <p>567</p>
+      </div>
+      <div class="card">
+        <h3>Active Users</h3>
+        <p>789</p>
+      </div>
+    </div>
+    <div class="recent-orders">
+      <h2>Recent Orders</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Customer</th>
+            <th>Amount</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#12345</td>
+            <td>Lawal Ogbaja</td>
+            <td>$199.99</td>
+            <td>Shipped</td>
+          </tr>
+          <tr>
+            <td>#12346</td>
+            <td>Lawrence Mary</td>
+            <td>$99.99</td>
+            <td>Pending</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <script>
+    // Toggle Sidebar
+const sidebar = document.querySelector(".sidebar");
+const btn = document.querySelector("#btn");
+
+btn.addEventListener("click", () => {
+  sidebar.classList.toggle("open");
+});
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
